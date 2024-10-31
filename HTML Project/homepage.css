@@ -13,3 +13,16 @@ h1 {
 main p {
     color: antiquewhite;
 }
+
+.poster img:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+html{
+    background-position: auto;
+}

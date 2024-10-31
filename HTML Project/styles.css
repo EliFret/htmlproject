@@ -117,7 +117,7 @@ html {
     background-image: url(Images/Marvel_Cinematic_Universe_logo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    display: flexbox;
 }
 
 
@@ -163,7 +163,7 @@ footer {
   padding: 10px;
   background-color: #282c34;
   color: white;
-  position: relative;
+  /* position: relative; */
   bottom: 0;  
   width: 100%;
 }
