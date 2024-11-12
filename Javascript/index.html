@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Copy The Code</title>
+    <script>
+        function varmessage(num1){
+            document.write ("The number the user entered is " + num1)
+        }
+
+        function areasquare(num1){
+            area=num1*num1
+            return area
+        }
+    </script>
 </head>
 <body>
    <b>This is my Javascript copy the code</b><br>
@@ -23,6 +33,11 @@
     userinput = window.prompt("Please enter your full name")
     window.alert("User's name is " + userinput + " and the user is " + userage + " years old.")
     
+    randomnum=window.prompt ("Please enter a number")
+    varmessage(randomnum)
+
+    thearea=areasquare(randomnum)
+    window.alert ("The area of the square is " + thearea)
     </script>
 </body>
 
