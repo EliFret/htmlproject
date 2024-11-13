@@ -43,7 +43,7 @@
         surfacearea = surfaceareasphere(r)
         volume = volumesphere(r)
 
-        document.getElementsByClassName("radius")[0].innerHTML = "<span style='font-size:19px;'>"+"The radius you entered is " + r + "cm"+"</span>"
+        document.getElementsByClassName("radius")[0].innerHTML = "<span style='font-size:19px;'>"+"The radius you entered is " +"<span style='font-size:20px; color:magenta;'>" + r + "</span>" + " cm"+"</span>"
         document.getElementsByClassName("circumference")[0].innerHTML = "The circumference of the sphere with radius " + "<span style='font-size:20px; color:blue;'>"+r+"</span>"+ " cm" + " is " + "<span style='font-size:20px; color:red;'>"+circumference+" cm"+"</span>"
         document.getElementsByClassName("surfacearea")[0].innerHTML = "The surface area of the sphere with radius " + "<span style='font-size:20px; color:yellowgreen;'>"+r+"</span>"+" cm" + " is " + "<span style='font-size:20px; color:green;'>"+surfacearea+" cm<sup>2</sup>"+"</span>"
         document.getElementsByClassName("volume")[0].innerHTML = "The volume of the sphere with radius " + "<span style='font-size:20px; color:yellow;'>"+r+"</span>" + " cm" + " is " + "<span style='font-size:20px; color:gold;'>"+volume+" cm<sup>3</sup>"+"</span"
