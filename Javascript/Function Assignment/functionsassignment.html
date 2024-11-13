@@ -26,25 +26,27 @@
 
         function volumesphere(radius){
             radiuscube = radius*radius*radius
-            volume = 4*π*radiuscube
+            volume = (4/3)*π*radiuscube
             return volume
         }
     </script>
 </head>
 <body>
+    <p class="radius"></p>
     <p class="circumference"></p>
     <p class="surfacearea"></p>
     <p class="volume"></p>
     <script>
         const π = 3.141592653589793238462643383279502884197;
-        var r = window.prompt("Please provide a radius of a sphere.")
+        var r = window.prompt("Please provide a radius of a sphere in centimetres.")
         circumference = circumferencesphere(r)
         surfacearea = surfaceareasphere(r)
         volume = volumesphere(r)
 
-        document.getElementsByClassName("circumference")[0].innerHTML = "The circumference of the sphere with radius " + "<span style='font-size:20px; color:blue;'>"+r+"</span>"+ " is " + "<span style='font-size:20px; color:red;'>"+circumference+"</span>"
-        document.getElementsByClassName("surfacearea")[0].innerHTML = "The surface area of the sphere with radius " + "<span style='font-size:20px; color:yellowgreen;'>"+r+"</span>"+ " is " + "<span style='font-size:20px; color:green;'>"+surfacearea+"</span>"
-        document.getElementsByClassName("volume")[0].innerHTML = "The volume of the sphere with radius " + "<span style='font-size:20px; color:yellow;'>"+r+"</span>" + " is " + "<span style='font-size:20px; color:gold;'>"+volume+"</span"
+        document.getElementsByClassName("radius")[0].innerHTML = "<span style='font-size:19px;'>"+"The radius you entered is " + r + "cm"+"</span>"
+        document.getElementsByClassName("circumference")[0].innerHTML = "The circumference of the sphere with radius " + "<span style='font-size:20px; color:blue;'>"+r+"</span>"+ " cm" + " is " + "<span style='font-size:20px; color:red;'>"+circumference+" cm"+"</span>"
+        document.getElementsByClassName("surfacearea")[0].innerHTML = "The surface area of the sphere with radius " + "<span style='font-size:20px; color:yellowgreen;'>"+r+"</span>"+" cm" + " is " + "<span style='font-size:20px; color:green;'>"+surfacearea+" cm<sup>2</sup>"+"</span>"
+        document.getElementsByClassName("volume")[0].innerHTML = "The volume of the sphere with radius " + "<span style='font-size:20px; color:yellow;'>"+r+"</span>" + " cm" + " is " + "<span style='font-size:20px; color:gold;'>"+volume+" cm<sup>3</sup>"+"</span"
     </script>
 </body>
 </html>
