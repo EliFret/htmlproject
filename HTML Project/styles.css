@@ -118,6 +118,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     display: flexbox;
+    object-fit: contain;
 }
 
 
@@ -125,7 +126,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: right;
-position: top;
+    position: top;
 
 }
 
@@ -156,6 +157,7 @@ section {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
 }
 
 footer {
